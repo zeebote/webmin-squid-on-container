@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  webmin-squid:
+    image: trucv/webmin-squid:latest
+    # init: true
+    volumes:
+      - wconfig:/etc/webmin
+      - sconfig:/etc/squid
+      - scache:/var/spool/squid
+    restart: always
+    ports:
+      - 10000:10000
+      - 3128:3128
+    container_name: webmin-squid
+volumes:
+  wconfig:
+  sconfig:
+  scache:
