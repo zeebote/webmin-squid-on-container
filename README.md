@@ -22,4 +22,5 @@ https://your-docker-host-IP:10000 \
 After login access squid proxy module on the side menu \
 Unused Modules  -> Squid Proxy Server \
 You should initial proxy cache before start squid the first time
-
+# References
+Dockerfile repos https://github.com/zeebote/webmin-squid-on-container
